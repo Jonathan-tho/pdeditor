@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CallbackComponent } from './callback.component';
-import { LandingPageComponent } from './public-deals/public-deals.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PrivateDealsComponent } from './private-deals/private-deals.component';
 import { AuthGuard } from './auth/auth.guard';
 
