@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CallbackComponent } from './callback.component';
-import { PublicDealsComponent } from './public-deals/public-deals.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PrivateDealsComponent } from './private-deals/private-deals.component';
 import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'deals',
+    redirectTo: 'landing-page',
     pathMatch: 'full'
   },
   {
-    path: 'deals',
-    component: PublicDealsComponent
+    path: 'landing-page',
+    component: LandingPageComponent
   },
   {
     path: 'special',

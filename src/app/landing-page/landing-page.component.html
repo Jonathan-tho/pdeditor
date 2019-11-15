@@ -1,0 +1,13 @@
+
+<div class="col-sm-12" *ngIf="!authService.isLoggedIn">
+  <div class="jumbotron text-center">
+    <h1>Provider Data Editor</h1>
+    <p>Provider Data Editor is a service that can be used to add, remove, or update the information
+      of current employees.
+    </p>
+  </div>
+</div>
+
+<div class="col-sm-12 alert alert-danger" *ngIf="error">
+  <strong>Oops!</strong> An error occurred fetching data. Please try again.
+</div>
