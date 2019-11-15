@@ -8,7 +8,7 @@ import { AuthGuard } from './auth/auth.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'deals',
+    redirectTo: 'landing-page',
     pathMatch: 'full'
   },
   {
