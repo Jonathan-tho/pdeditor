@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CallbackComponent } from './callback.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { PrivateDealsComponent } from './private-deals/private-deals.component';
+import { SearchPageComponent } from './private-deals/private-deals.component';
 import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
@@ -16,8 +16,8 @@ const routes: Routes = [
     component: LandingPageComponent
   },
   {
-    path: 'special',
-    component: PrivateDealsComponent,
+    path: 'search-page',
+    component: SearchPageComponent,
     canActivate: [
       AuthGuard
     ]

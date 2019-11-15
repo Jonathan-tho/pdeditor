@@ -9,7 +9,7 @@ import { Deal } from '../deal';
   templateUrl: './private-deals.component.html',
   styleUrls: ['./private-deals.component.css']
 })
-export class PrivateDealsComponent implements OnInit, OnDestroy {
+export class SearchPageComponent implements OnInit, OnDestroy {
   dealsSub: Subscription;
   privateDeals: Deal[];
   error: any;
