@@ -9,20 +9,12 @@ import { AuthService } from './auth/auth.service';
         <div class="navbar-header">
           <a class="navbar-brand" routerLink="/">{{ title }}</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li>
-            <a routerLink="/deals" routerLinkActive="active">Deals</a>
-          </li>
-          <li>
-            <a routerLink="/special" *ngIf="authService.isLoggedIn" routerLinkActive="active">Private Deals</a>
-          </li>
-        </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a *ngIf="!authService.isLoggedIn" (click)="authService.login()">Log In</a>
+            <button class="btn btn-success" *ngIf="!authService.isLoggedIn" (click)="authService.login()">Log In</button>
           </li>
           <li>
-            <a (click)="authService.logout()" *ngIf="authService.isLoggedIn">Log Out</a>
+            <button class="btn btn-success" (click)="authService.logout()" *ngIf="authService.isLoggedIn">Log Out</button>
           </li>
         </ul>
       </nav>
@@ -32,11 +24,12 @@ import { AuthService } from './auth/auth.service';
     </div>
   `,
   styles: [
-    `.navbar-right { margin-right: 0px !important}`
+    `.navbar-right { margin-right: 0px !important}
+    button {margin: 10px}`
   ]
 })
 export class AppComponent {
-  title = 'Daily Deals';
+  title = 'Provider Data Editor';
 
   constructor(public authService: AuthService) {}
 }
