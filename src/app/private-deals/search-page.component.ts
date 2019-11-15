@@ -5,9 +5,9 @@ import { Subscription } from 'rxjs';
 import { Deal } from '../deal';
 
 @Component({
-  selector: 'app-private-deals',
-  templateUrl: './private-deals.component.html',
-  styleUrls: ['./private-deals.component.css']
+  selector: 'app-search-page',
+  templateUrl: './search-page.component.html',
+  styleUrls: ['./search-page.component.css']
 })
 export class SearchPageComponent implements OnInit, OnDestroy {
   dealsSub: Subscription;

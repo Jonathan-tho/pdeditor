@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CallbackComponent } from './callback.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { SearchPageComponent } from './private-deals/private-deals.component';
+import { SearchPageComponent } from './private-deals/search-page.component';
 import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
